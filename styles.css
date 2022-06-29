@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: monospace;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+a {
+    color: white;  
+    text-decoration: none;  
+}
+
+a:hover{
+    color: lightgreen;
+}
+
+
+/*selectors found in the header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0px 48px;
+    height: 72px;
+    width: auto;
+    background-color: black;
+}
+
+.logo {
+    color: white;
+}
+
+.page-links {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    text-decoration: none;  
+}
+
+/*selectors found in content*/
+.content {
+    flex: 1;
+    justify-content: space-between;
+}
+
+/*selectors found in sections*/
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width:auto;
+    min-height: 40px;
+    max-height: 150px;
+    min-width: 400px;
+    width: auto;
+    flex-shrink: 0;
+    padding: 24px;
+}
+
+.first {
+    background-color: lightgreen;
+    display: flex;
+}
+
+.second {
+    background-color:lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.third {
+    background-color: lightgreen;
+    display: flex;
+}
+
+.fourth {
+    background-color: lightgrey;
+    display: flex;
+}
+
+.art-text-cards {
+    display: flex;
+}
+
+.art-text-card {
+    display: flex;
+}
+
+.art-card {
+    border: 4px;
+    border-color: lightgreen;
+    min-height: 40px ;
+    min-width: 40px;
+    height: 20px;
+    width: 20px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.text-card {
+
+}
+
+/*selectors found in footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0px 48px;
+    height: 24px;
+    width: auto;
+    background-color: black;
+}
+
+.copyright {
+    color: white;
+}
