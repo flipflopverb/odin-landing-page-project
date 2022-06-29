@@ -19,7 +19,7 @@ a {
 }
 
 a:hover{
-    color: lightgreen;
+    color: springgreen;
 }
 
 
@@ -29,7 +29,7 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    padding: 0px 48px;
+    padding: 24px 48px;
     height: 72px;
     width: auto;
     background-color: black;
@@ -37,6 +37,7 @@ a:hover{
 
 .logo {
     color: white;
+    font-size: 48px;
 }
 
 .page-links {
@@ -64,12 +65,77 @@ a:hover{
     min-width: 400px;
     width: auto;
     flex-shrink: 0;
-    padding: 24px;
+    padding: 24px 24px 48px;
+    border-radius: 12px 12px 0 0;
+    margin-top: -24px;
 }
 
 .first {
-    background-color: lightgreen;
+    background-color: black;
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    color: white;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+    align-items:right;
+    gap: 8px;
+}
+.main-text {
+font-size: x-large;
+}
+
+.sub-text {
+    font-size: x-small;
+}
+
+.album-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightgrey;
+    height: 180px;
+    width: 320px;
+    border-radius: 12px;
+}
+
+.album-art>img {
+    height: 180px;
+    width: 320px;
+    border-radius: 12px;
+}
+
+button {
+    color: black;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 4px 12px;
+    border: 0px;
+    border-radius: 12px;
+    gap: 16px;
+}
+
+.spotify-button>button {
+    background-color: lightgrey;
+    transition-duration: 500ms;
+}
+
+.spotify-button>button:hover {
+    background-color: springgreen;
+    transition-duration: 500ms;
+}
+
+.spotify-button>button>img {
+    height: 36px;
+    width: auto;
+    border-radius: 100%;
+    background-blend-mode: multiply;
 }
 
 .second {
@@ -79,21 +145,10 @@ a:hover{
     gap: 40px;
 }
 
-.third {
-    background-color: lightgreen;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    gap: 20px
+.alt-main-text {
+    font-size: large;
 }
-
-.fourth {
-    background-color: lightgrey;
-    display: flex;
-}
-
-.art-text-cards {
+.card-table {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -108,12 +163,30 @@ a:hover{
     height: 160px;
     width: 160px;
     gap:12px;
+    
 }
 
 .art-card {
     border: 4px solid black;
     height: 100px;
     width: 100px;
+    border-radius: 12px;
+}
+
+.art-card>img {
+    opacity: .8;
+    height: 100px;
+    width: 100px;
+    transition-duration: 500ms;
+
+}
+
+.art-card>img:hover {
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+    transition-duration: 500ms;
+
 }
 
 .text-card {
@@ -133,6 +206,47 @@ a:hover{
     text-align: right;
 }
 
+.third {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 20px
+}
+
+.fourth {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action-card {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 600px;
+    height: auto;
+    background-color: grey;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+
+.instagram-button>button{
+    background-color: lightgrey;
+    transition-duration: 500ms;
+}
+
+.instagram-button>button:hover {
+    background-color: salmon;
+    transition-duration: 500ms;
+}
+
+
+
+
 /*selectors found in footer*/
 
 .footer {
@@ -140,10 +254,11 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    padding: 0px 48px;
+    padding: 48px 0;
     height: 24px;
     width: auto;
     background-color: black;
+    margin-top: -12px;
 }
 
 .copyright {
